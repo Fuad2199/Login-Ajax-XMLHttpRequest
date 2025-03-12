@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "boxicons": "^2.1.4",
+    "cloudinary": "^2.6.0"
+  }
+}
