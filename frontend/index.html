@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="main">
+        <form class="login" id="login" action="javascript:void(0)">
+            <h1 class="center">Log In</h1>
+            <p class="desc center">Enter your login details</p>
+
+            <!-- Email -->
+            <div class="input-box">
+                <label class="auth" for="email">Email</label>
+                <div class="icon">
+                    <i class="bi bi-envelope-fill"></i>
+                    <input class="inputs" type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <span class="status-email"></span>
+            </div>
+
+            <!-- Password -->
+            <div class="input-box">
+                <label class="auth" for="password">Password</label>
+                <div class="icon">
+                    <i class="bi bi-lock-fill"></i>
+                    <input class="inputs" type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <span class="status-password"></span>
+            </div>
+
+            <!-- Forget-password -->
+            <div class="remember-forget">
+                <label class="auth" for="remember">
+                    <span>
+                        <input class="checkbox" type="checkbox" id="remember"> Remember me
+                    </span>
+                    <a href="#">Forget password?</a>
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Log In</button>
+            <span class="form-status"></span>
+
+            <!-- Account is nothing -->
+            <div class="register-link">
+                <p class="center">Don't have an account?
+                    <a class="signuptext" href="#">Sign Up</a>
+                </p>
+            </div>
+
+            <div class="log-social">
+                <span>Or Log In with</span>
+                <div class="social-icon">
+                    <a href="#"><i id="social" class="bi bi-facebook"></i></a>
+                    <a href="#"><i id="social" class="bi bi-google"></i></a>
+                    <a href="#"><i id="social" class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i id="social" class="bi bi-github"></i></a>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
